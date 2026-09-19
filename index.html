@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no">
+<title>PurrNest 猫家具出口 · 微信名片</title>
+<meta name="description" content="义乌猫家具工厂直供美国渠道：六大品类、MOQ 200 起、7 天打样、支持 OEM/ODM 与 FBA 贴标。">
+<style>
+:root{--green:#07C160;--ink:#1f1f1f;--gray:#8a8a8a;--line:#EDEDED;--bg:#F7F7F7;--coral:#FF7A59;
+  --font:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",system-ui,sans-serif}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:16px;line-height:1.7;
+  padding-bottom:70px;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:677px;margin:0 auto;background:#fff;min-height:100vh}
+.hd{padding:22px 18px 18px;background:linear-gradient(160deg,#FFF3EC,#FFFFFF 60%)}
+.hd .row{display:flex;align-items:center;gap:12px}
+.avatar{width:58px;height:58px;border-radius:14px;background:var(--coral);display:flex;align-items:center;justify-content:center;
+  box-shadow:0 6px 16px rgba(255,122,89,.3);flex:0 0 58px}
+.avatar svg{width:34px;height:34px}
+.hd h1{font-size:18px;margin:0;line-height:1.35}
+.hd .id{font-size:12.5px;color:var(--gray);margin-top:2px}
+.follow{margin-left:auto;background:var(--green);color:#fff;border:0;border-radius:999px;padding:8px 17px;font-size:14px;font-weight:700}
+.bio{padding:0 18px 16px;color:#5b5b5b;font-size:14px}
+.stats{display:flex;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stats div{flex:1;text-align:center;padding:12px 4px}
+.stats b{display:block;font-size:19px;color:var(--coral);line-height:1.3}
+.stats span{font-size:11.5px;color:var(--gray)}
+.card{display:flex;gap:12px;padding:14px 18px;border-bottom:1px solid var(--line)}
+.card .thumb{width:92px;height:92px;border-radius:10px;overflow:hidden;flex:0 0 92px;background:#FFF6F1;
+  display:flex;align-items:center;justify-content:center}
+.card .thumb img{width:100%;height:100%;object-fit:cover}
+.card h3{margin:0 0 4px;font-size:15.5px;line-height:1.45}
+.card p{margin:0;font-size:12.5px;color:var(--gray);line-height:1.5}
+.card .meta{font-size:11.5px;color:#b5b5b5;margin-top:6px}
+.sec{padding:18px}
+.sec h2{font-size:16px;margin:0 0 12px;padding-left:10px;border-left:3px solid var(--green);line-height:1.2}
+.btns{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.btn{display:block;text-align:center;border-radius:10px;padding:13px 10px;font-size:15px;font-weight:700}
+.btn.p{background:var(--green);color:#fff}
+.btn.g{background:#F3F3F3;color:var(--ink)}
+.qrbox{margin:0 18px 18px;border:1px dashed #E0E0E0;border-radius:12px;padding:16px;text-align:center;background:#FCFCFC}
+.qrbox img{width:180px;height:180px;margin:0 auto 8px;object-fit:contain}
+.qrbox p{margin:0;font-size:12.5px;color:var(--gray)}
+.info{padding:0 18px 20px;font-size:13.5px;color:#5b5b5b}
+.info div{padding:9px 0;border-bottom:1px solid var(--line);display:flex;gap:10px}
+.info b{flex:0 0 74px;color:var(--gray);font-weight:500}
+.bar{position:fixed;left:0;right:0;bottom:0;display:flex;gap:8px;padding:8px 12px calc(8px + env(safe-area-inset-bottom));
+  background:rgba(255,255,255,.97);border-top:1px solid var(--line);backdrop-filter:blur(10px);z-index:20}
+.bar a,.bar button{flex:1;text-align:center;border:0;border-radius:999px;padding:12px 6px;font-size:14.5px;font-weight:700}
+.bar .p{background:var(--green);color:#fff}
+.bar .g{background:#F3F3F3;color:var(--ink)}
+.mask{position:fixed;inset:0;background:rgba(0,0,0,.55);display:none;align-items:center;justify-content:center;z-index:50}
+.mask.on{display:flex}
+.mask .box{background:#fff;border-radius:16px;padding:22px 20px;width:78%;max-width:320px;text-align:center}
+.mask img{width:200px;height:200px;margin:0 auto 10px;object-fit:contain}
+.mask p{margin:0;font-size:13.5px;color:#666}
+.mask .close{margin-top:14px;background:#F3F3F3;border:0;border-radius:999px;padding:10px 22px;font-size:14px}
+.toast{position:fixed;left:50%;bottom:88px;transform:translateX(-50%);background:rgba(0,0,0,.82);color:#fff;
+  padding:9px 16px;border-radius:999px;font-size:13px;opacity:0;transition:opacity .25s;z-index:60}
+.toast.on{opacity:1}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hd">
+    <div class="row">
+      <span class="avatar"><svg viewBox="0 0 24 24" fill="#fff"><ellipse cx="12" cy="16" rx="4.6" ry="3.9"/><ellipse cx="5.6" cy="10.4" rx="2.2" ry="2.8"/><ellipse cx="9.4" cy="7.4" rx="2.2" ry="2.8"/><ellipse cx="14.6" cy="7.4" rx="2.2" ry="2.8"/><ellipse cx="18.4" cy="10.4" rx="2.2" ry="2.8"/></svg></span>
+      <div>
+        <h1>PurrNest 猫家具出口</h1>
+        <div class="id">微信号：13027467513</div>
+      </div>
+      <button class="follow" id="btnFollow">加微信</button>
+    </div>
+  </div>
+  <div class="bio">义乌自有工厂 · 2014 年起专做美国宠物渠道。实木猫爬架、抓柱抓板、猫窝、逗猫棒、猫墙系统、猫床吊床。MOQ 200 起，7 天打样。</div>
+
+  <div class="stats">
+    <div><b>2014</b><span>建厂</span></div>
+    <div><b>80,000㎡</b><span>厂房</span></div>
+    <div><b>30+</b><span>出口国</span></div>
+    <div><b>200</b><span>起订量</span></div>
+  </div>
+
+  <div class="card">
+    <div class="thumb"><img src="img/03-best.png" alt="热销款"></div>
+    <div>
+      <h3>猫爬架做到 MOQ 200：一家义乌猫家具工厂的出海账本</h3>
+      <p>怎么报价、怎么打样、多少起订、多久交货——账本摊开给你看。</p>
+      <div class="meta">工厂手记 · 建议阅读 3 分钟</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="thumb"><img src="img/02-cats.png" alt="六大品类"></div>
+    <div>
+      <h3>六个品类一次看懂：按"猫在干什么"来分</h3>
+      <p>爬、抓、躲、玩、上墙、睡——和美国家庭的采购逻辑一致。</p>
+      <div class="meta">选品指南 · 建议阅读 2 分钟</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="thumb"><img src="img/05-faq.png" alt="采购FAQ"></div>
+    <div>
+      <h3>采购最常问的六个问题：MOQ、交期、付款、贴牌、认证、FBA</h3>
+      <p>一次回答完，省掉来回问的十个回合。</p>
+      <div class="meta">采购问答 · 建议阅读 2 分钟</div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2>快速入口</h2>
+    <div class="btns">
+      <a class="btn p" href="wechat/index.html">看手机版目录</a>
+      <a class="btn g" href="wechat/index.html#best">看热销款</a>
+      <a class="btn g" href="article.html">读工厂手记</a>
+      <a class="btn g" id="btnCopy">复制微信号</a>
+    </div>
+  </div>
+
+  <div class="qrbox">
+    <img src="img/qr-wechat.png" alt="微信二维码" onerror="this.style.display='none'">
+    <p>长按识别二维码，关注公众号「曦曦小哥的宝藏箱」· 回复「目录」拿 17 款目录与出厂价表</p>
+  </div>
+
+  <div class="sec">
+    <h2>联系方式</h2>
+  </div>
+  <div class="info">
+    <div><b>微信</b><span>13027467513</span></div>
+    <div><b>中国电话</b><span>+86 571 5555 0188</span></div>
+    <div><b>美国电话</b><span>+1 (909) 555-0142</span></div>
+    <div><b>邮箱</b><span>sales@purrnest.com</span></div>
+    <div><b>WhatsApp</b><span>+86 138 5555 0199</span></div>
+    <div><b>中国工厂</b><span>浙江省义乌市城北路 88 号</span></div>
+    <div><b>美国办公室</b><span>2310 E Francis St, Ontario, CA 91761</span></div>
+  </div>
+</div>
+
+<div class="bar">
+  <button class="p" id="barFollow">关注公众号</button>
+  <a class="g" href="mailto:sales@purrnest.com">发邮件</a>
+  <a class="g" href="tel:+8657155550188">打电话</a>
+</div>
+
+<div class="mask" id="mask">
+  <div class="box">
+    <img src="img/qr-wechat.png" alt="二维码" onerror="this.style.display='none'">
+    <p>长按识别二维码，关注公众号「曦曦小哥的宝藏箱」<br><span style="color:#8a8a8a;font-size:13px;">关注后回复「目录」自动发 17 款目录与出厂价表 · 也可加微信 13027467513</span></p>
+    <button class="close" id="btnClose">关闭</button>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+(function(){
+  var WX = '13027467513';
+  function toast(m){ var t=document.getElementById('toast'); t.textContent=m; t.classList.add('on'); setTimeout(function(){t.classList.remove('on');},1600); }
+  function copy(s){
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(s).then(function(){toast('微信号已复制 ✓');},function(){fb();});
+    else fb();
+    function fb(){ var a=document.createElement('textarea'); a.value=s; a.style.position='fixed'; a.style.opacity='0'; document.body.appendChild(a); a.select(); try{document.execCommand('copy'); toast('微信号已复制 ✓');}catch(e){ toast(s); } document.body.removeChild(a); }
+  }
+  document.getElementById('btnCopy').addEventListener('click', function(){ copy(WX); });
+  function openMask(){ document.getElementById('mask').classList.add('on'); }
+  document.getElementById('btnFollow').addEventListener('click', openMask);
+  document.getElementById('barFollow').addEventListener('click', openMask);
+  document.getElementById('btnClose').addEventListener('click', function(){ document.getElementById('mask').classList.remove('on'); });
+  document.getElementById('mask').addEventListener('click', function(e){ if(e.target.id==='mask') this.classList.remove('on'); });
+  Array.prototype.forEach.call(document.querySelectorAll('.card'), function(c){
+    c.addEventListener('click', function(){ location.href = 'article.html'; });
+  });
+})();
+</script>
+</body>
+</html>
